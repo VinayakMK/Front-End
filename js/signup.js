@@ -106,7 +106,6 @@ function validateForm(){
         return false
     }
     else{
-        submitError.innerHTML=''
-        return true
+        window.location.href="index.html";
     }
 }

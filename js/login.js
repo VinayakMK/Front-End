@@ -19,23 +19,23 @@
 }*/
 
 
-function validateName(){
-  let nameError = document.getElementById('username-error')
-  let name = document.getElementById('username')
+// function validateName(){
+//   let nameError = document.getElementById('username-error')
+//   let name = document.getElementById('username')
 
-  if(name.value.trim()==''){
-      nameError.innerHTML='Username cannot be blank!'
-      return false
-  }
-  else if(name.value.length < 5){
-      nameError.innerHTML='Username must not be less than 5 characters!'
-      return false
-  }
-  else{
-      nameError.innerHTML =''
-      return true
-  }
-}
+//   if(name.value.trim()==''){
+//       nameError.innerHTML='Username cannot be blank!'
+//       return false
+//   }
+//   else if(name.value.length < 5){
+//       nameError.innerHTML='Username must not be less than 5 characters!'
+//       return false
+//   }
+//   else{
+//       nameError.innerHTML =''
+//       return true
+//   }
+// }
 
 function validateName(){
   let nameError = document.getElementById('username-error')
@@ -80,7 +80,9 @@ function validateForm(){
       return false
   }
   else{
-      submitError.innerHTML=''
-      return true
+    //   submitError.innerHTML=''
+    //   return true;
+
+    window.location.href="index.html";
   }
 }
